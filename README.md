@@ -32,3 +32,11 @@ Greenden/
 ├── output.css # Tailwind CSS file (generated)
 ├── /images # Folder containing plant/shop images
 └── README.md # Project documentation
+
+---
+
+## 🔧 Future Enhancements
+
+- 🛒 Add shopping cart functionality
+- 🔍 Add search & filter options
+- 🌐 Add multi-language support
