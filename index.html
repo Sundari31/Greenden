@@ -15,23 +15,29 @@
   <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
     <h1 class="text-2xl">Greenden</h1>
 
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
       class="size-6 md:hidden">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
     </svg>
 
     <ul class="flex gap-5 text-gray-600 hidden md:flex">
-      <li class=" hover:underline hover:text-black">
-        <a href="./index.html">Home</a>
-      </li>
-      <li class=" hover:underline hover:text-black">
-        <a href="./product.html">Products</a>
-      </li>
-      <li class=" hover:underline hover:text-black">
-        <a href="./contact.html">Contact</a>
-      </li>
+      <li><a href="./index.html"  class=" hover:underline hover:text-black">Home</a></li>
+      <li><a href="./product.html" class=" hover:underline hover:text-black">Products</a></li>
+      <li><a href="./contact.html" class=" hover:underline hover:text-black">Contact</a></li>
     </ul>
   </nav>
+
+  <!-- Side Navbar -->
+   <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right: -50%;">
+    <div class="text-right p-5">
+      <p id="closenav" class="inline cursor-pointer">X</p>
+    </div>
+   <ul class="flex flex-col gap-10 items-center text-gray-600 md:flex">
+      <li><a href="./index.html"  class=" hover:underline hover:text-black">Home</a></li>
+      <li><a href="./product.html" class=" hover:underline hover:text-black">Products</a></li>
+      <li><a href="./contact.html" class=" hover:underline hover:text-black">Contact</a></li>
+    </ul>
+    </section>
 
   <!-- Header Section -->
   <section class="bg-green-100 p-4 md:p-10 flex justify-center">
@@ -65,9 +71,7 @@
         </svg>
 
         <h2 class="text-xl font-medium">Large Assortment</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur rerum voluptate nihil architecto laboriosam
-          harum officia voluptatum ipsum blanditiis nesciunt beatae earum, voluptatibus necessitatibus ullam commodi
-          sequi tempora, excepturi sunt.</p>
+        <p>We offer a large and diverse assortment of high-quality plants, carefully selected to meet the needs of every customer. Whether you’re looking for low-maintenance succulents, elegant indoor plants, flowering beauties, or even air-purifying varieties — we have it all in one place. Each plant in our collection is hand-picked and nurtured with love to ensure it arrives healthy, vibrant, and ready to thrive in your space.</p>
       </div>
 
       <div class="border border-black p-2 m-6">
@@ -79,9 +83,7 @@
         </svg>
 
         <h2 class="text-xl font-medium">Free and Fast Shipping</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur rerum voluptate nihil architecto laboriosam
-          harum officia voluptatum ipsum blanditiis nesciunt beatae earum, voluptatibus necessitatibus ullam commodi
-          sequi tempora, excepturi sunt.</p>
+        <p>Our goal is to make plant shopping simple, fun, and stress-free. That’s why we provide fast and free delivery across regions, ensuring your plants reach you fresh and safely packaged. With a focus on quality and customer satisfaction, we’ve designed our logistics to minimize plant stress during transit and to ensure they look just as beautiful when they arrive as they did when they left us.</p>
       </div>
 
 
@@ -94,9 +96,7 @@
         </svg>
 
         <h2 class="text-xl font-medium">24/7 Support</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur rerum voluptate nihil architecto laboriosam
-          harum officia voluptatum ipsum blanditiis nesciunt beatae earum, voluptatibus necessitatibus ullam commodi
-          sequi tempora, excepturi sunt.</p>
+        <p>We understand that every plant parent — whether new or experienced — might need help or guidance. That’s why our friendly customer support team is available 24/7 to assist you at every step. Whether you need help picking the right plant for your space, caring for a new one, or resolving any delivery issues — we’re always here to help with expert advice and quick support.</p>
       </div>
     </div>
   </section>
@@ -168,6 +168,8 @@
     <p>Greenden - Your peaceful plant corner on the internet</p>
     <p>@ 2021 Greenday.com</p>
    </section>
+
+   <script src="index.js"></script>
 </body>
 
 </html>
